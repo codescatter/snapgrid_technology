@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block base %}
+
+<!-- page-header -->
+{% comment %} <div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                <div class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="">Login</a></li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- /.page-header-->
+<!-- login-form -->
+
+{% comment %} <div class="content">
+    <div class="container">
+        <div class="box">
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-12 col-xs-12 ">
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 mb20">
+                                <h3 class="mb10">Login</h3>
+                            </div>
+                            <!-- message -->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    {% for message in messages %}
+                                    <div class="container-fluid p-0">
+                                        <div class="alert {{ message.tags }} alert-dismissible" role="alert">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            {{ message }}
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+
+                            </div>
+                            <!-- form -->
+                            <form method="POST">
+                                {% csrf_token %}
+
+                                {% for fm in form %}
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        {{fm}}<small class="text-danger">{{fm.errors|striptags}}</small>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                <button type="submit" class="btn btn-primary btn-block mb10">Login</button>
+                                <div>
+                                    <p><a href="{% url 'password_reset' %}">Forget your password?</a></p>
+                                </div>
+                            </form>
+
+                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                <h4 class="mb20">Login With</h4>
+                                <div class="social-media">
+                                    <a href="#" class="btn-social-rectangle btn-facebook"><i
+                                            class="fa fa-facebook"></i><span class="social-text">Facebook</span></a>
+                                    <a href="#" class="btn-social-rectangle btn-twitter"><i
+                                            class="fa fa-twitter"></i><span class="social-text">Twitter</span> </a>
+                                    <a href="#" class="btn-social-rectangle btn-googleplus"><i
+                                            class="fa fa-google-plus"></i><span class="social-text">Google
+                                            Plus</span></a>
+                                </div>
+                            </div> -->
+                            <!-- /.form -->
+                        </div>
+                    </div>
+                </div>
+                <!-- features -->
+                <div class="col-8">
+                    <div class="box-body" style="margin-left: 20px;">
+                        
+                        <div class="feature-left">
+                            <div class="feature-icon">
+                                <img src="{% static 'images/feature_icon_1.png' %}" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Loyalty Points</h4>
+                                <p>Aenean lacinia dictum risvitae pulvinar disamer seronorem ipusm dolor sit manert.</p>
+                            </div>
+                        </div>
+                        <div class="feature-left">
+                            <div class="feature-icon">
+                                <img src="{% static 'images/feature_icon_2.png' %}" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Instant Checkout</h4>
+                                <p>Aenean lacinia dictum risvitae pulvinar disamer seronorem ipusm dolor sit manert.</p>
+                            </div>
+                        </div>
+                        <div class="feature-left">
+                            <div class="feature-icon">
+                                <img src="{% static 'images/feature_icon_3.png' %}" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Exculsive Offers</h4>
+                                <p>Aenean lacinia dictum risvitae pulvinar disamer seronorem ipusm dolor sit manert.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.features -->
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- /.login-form -->
+
+<center><div class="content" style="margin-top: 100px; height: 700px; width: 500px;">
+    <div class="container">
+        <div class="box sing-form">
+            <div class="row">
+                <div class="col">
+                    <!-- form -->
+                    <div class="box-body">
+                        <h3>Login</h3>
+                    </div>
+                    <!-- Message Display -->
+                    {% for message in messages %}
+                    <div class="container-fluid p-0">
+                        <div class="alert {{ message.tags }} alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            {{ message }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <form method="POST">
+                        {% csrf_token %}
+
+                        {% for fm in form %}
+                        <div class="form-access">
+                            <div class="form-group">
+                                {{fm}}<small class="text-danger">{{fm.errors|striptags}}</small>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        <button type="submit" class="btn btn-primary btn-block mb10">Login</button>
+                        <div>
+                            <p><a href="{% url 'password_reset' %}">Forget your password?</a></p>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.form -->
+                <!-- features -->
+                <!-- <div class="col-8">
+                    <div class="box-body" style="margin-left: 20px;">
+                        
+                        <div class="feature-left">
+                            <div class="feature-icon">
+                                <img src="{% static 'images/feature_icon_1.png' %}" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Loyalty Points</h4>
+                                <p>Aenean lacinia dictum risvitae pulvinar disamer seronorem ipusm dolor sit manert.</p>
+                            </div>
+                        </div>
+                        <div class="feature-left">
+                            <div class="feature-icon">
+                                <img src="{% static 'images/feature_icon_2.png' %}" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Instant Checkout</h4>
+                                <p>Aenean lacinia dictum risvitae pulvinar disamer seronorem ipusm dolor sit manert.</p>
+                            </div>
+                        </div>
+                        <div class="feature-left">
+                            <div class="feature-icon">
+                                <img src="{% static 'images/feature_icon_3.png' %}" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Exculsive Offers</h4>
+                                <p>Aenean lacinia dictum risvitae pulvinar disamer seronorem ipusm dolor sit manert.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- /.features -->
+            </div>
+        </div>
+    </div>
+</div></center>
+
+{% endblock base %}

@@ -1,0 +1,559 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block base %}
+{% for message in messages %}
+        <div class="container-fluid p-0">
+            <div class="alert {{ message.tags }} alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                {{ message }}
+            </div>
+        </div>
+        {% endfor %}   
+            <!-- Breadcrumbs Start -->
+            <div class="rs-breadcrumbs img3" style="background: url(static/assets/images/breadcrumbs/1.jpg);">
+                <div class="breadcrumbs-inner text-center">
+                    <h1 class="page-title">Services</h1>
+                    <ul>
+                        <li title="Braintech - IT Solutions and Technology Startup HTML Template">
+                            <a class="active" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li>Services</li>                       
+                    </ul>
+                </div>
+            </div>
+            <!-- Breadcrumbs End -->
+
+            <!-- Services Section Start -->
+            <div class="rs-services style2 pt-120 pb-120 md-pt-80 md-pb-80">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-25">
+                           <div class="flip-box-inner">
+                                <div class="flip-box-wrap">
+                                    <div class="front-part">
+                                       <div class="front-content-part">
+                                            <div class="front-icon-part">
+                                                <div class="icon-part">
+                                                    <img src="{% static 'assets/images/services/main-home/icons/1.png' %}" alt=""> 
+                                                </div>
+                                            </div>
+                                            <div class="front-title-part">
+                                                <h3 class="title"><a href="{% url 'web_development' %}">Web Development</a></h3>
+                                            </div>
+                                            <div class="front-desc-part">
+                                                <p>
+                                                    Web development is a tasks associated with creating, building, and maintaining websites on a browser.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back-front">
+                                        <div class="back-front-content">
+                                            <div class="back-title-part">
+                                                <h3 class="back-title"><a href="{% url 'web_development' %}">Web Development</a></h3>
+                                            </div>
+                                            <div class="back-desc-part">
+                                                <p class="back-desc">Web development is a tasks associated with creating, building, and maintaining websites on a browser.</p>
+                                            </div>
+                                            <div class="back-btn-part">
+                                                <a class="readon view-more" href="{% url 'web_development' %}">Get In Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div> 
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-25">
+                           <div class="flip-box-inner">
+                                <div class="flip-box-wrap">
+                                    <div class="front-part">
+                                       <div class="front-content-part">
+                                            <div class="front-icon-part">
+                                                <div class="icon-part">
+                                                    <img src="{% static 'assets/images/myimages/m2.png' %}" alt=""> 
+                                                </div>
+                                            </div>
+                                            <div class="front-title-part">
+                                                <h3 class="title"><a href="{% url 'app_dev' %}"> Android Development</a></h3>
+                                            </div>
+                                            <div class="front-desc-part">
+                                                <p>
+                                                    Application development is the process of creating a computer program or a set of programs to perform the different tasks.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back-front">
+                                        <div class="back-front-content">
+                                            <div class="back-title-part">
+                                                <h3 class="back-title"><a href="{% url 'app_dev' %}"> Android Development</a></h3>
+                                            </div>
+                                            <div class="back-desc-part">
+                                                <p class="back-desc">Application development is the process of creating a computer program or a set of programs to perform the different tasks.</p>
+                                            </div>
+                                            <div class="back-btn-part">
+                                                <a class="readon view-more" href="{% url 'app_dev' %}">Get In Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div> 
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-25">
+                           <div class="flip-box-inner">
+                                <div class="flip-box-wrap">
+                                    <div class="front-part">
+                                       <div class="front-content-part">
+                                            <div class="front-icon-part">
+                                                <div class="icon-part">
+                                                    <img src="{% static 'assets/images/services/style1/3.png' %}" alt=""> 
+                                                </div>
+                                            </div>
+                                            <div class="front-title-part">
+                                                <h3 class="title"><a href="{% url 'digital_marketing' %}">Digital Marketing</a></h3>
+                                            </div>
+                                            <div class="front-desc-part">
+                                                <p>
+                                                    Digital Marketing is the promotion of brands to connect with potential customers using the internet and digital communication.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back-front">
+                                        <div class="back-front-content">
+                                            <div class="back-title-part">
+                                                <h3 class="back-title"><a href="{% url 'digital_marketing' %}">Digital Marketing</a></h3>
+                                            </div>
+                                            <div class="back-desc-part">
+                                                <p class="back-desc">Digital Marketing is the promotion of brands to connect with potential customers using the internet and digital communication.</p>
+                                            </div>
+                                            <div class="back-btn-part">
+                                                <a class="readon view-more" href="{% url 'digital_marketing' %}">Get In Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div> 
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-25">
+                           <div class="flip-box-inner">
+                                <div class="flip-box-wrap">
+                                    <div class="front-part">
+                                       <div class="front-content-part">
+                                            <div class="front-icon-part">
+                                                <div class="icon-part">
+                                                    <img src="{% static 'assets/images/services/main-home/icons/2.png' %}" alt=""> 
+                                                </div>
+                                            </div>
+                                            <div class="front-title-part">
+                                                <h3 class="title"><a href="{% url 'web_design' %}">Web Design</a></h3>
+                                            </div>
+                                            <div class="front-desc-part">
+                                                <p>
+                                                    Web design refers to the design of websites that are displayed on the internet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back-front">
+                                        <div class="back-front-content">
+                                            <div class="back-title-part">
+                                                <h3 class="back-title"><a href="{% url 'web_design' %}">Web Design</a></h3>
+                                            </div>
+                                            <div class="back-desc-part">
+                                                <p class="back-desc">Web design refers to the design of websites that are displayed on the internet.</p>
+                                            </div>
+                                            <div class="back-btn-part">
+                                                <a class="readon view-more" href="{% url 'web_design' %}">Get In Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div> 
+                        </div>
+                        <div class="col-lg-4 col-md-6 md-mb-25">
+                           <div class="flip-box-inner">
+                                <div class="flip-box-wrap">
+                                    <div class="front-part">
+                                       <div class="front-content-part">
+                                            <div class="front-icon-part">
+                                                <div class="icon-part">
+                                                    <img src="{% static 'assets/images/services/main-home/icons/4.png' %}" alt=""> 
+                                                </div>
+                                            </div>
+                                            <div class="front-title-part">
+                                                <h3 class="title"><a href="{% url 'hosting' %}">Hosting</a></h3>
+                                            </div>
+                                            <div class="front-desc-part">
+                                                <p>
+                                                    Hosting is a service through which storage and computing resources are provided.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back-front">
+                                        <div class="back-front-content">
+                                            <div class="back-title-part">
+                                                <h3 class="back-title"><a href="{% url 'hosting' %}">Hosting</a></h3>
+                                            </div>
+                                            <div class="back-desc-part">
+                                                <p class="back-desc">Hosting is a service through which storage and computing resources are provided.
+                                                </p>
+                                            </div>
+                                            <div class="back-btn-part">
+                                                <a class="readon view-more" href="{% url 'hosting' %}">Get In Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div> 
+                        </div>
+                        <div class="col-lg-4 col-md-6 sm-mb-25">
+                           <div class="flip-box-inner">
+                                <div class="flip-box-wrap">
+                                    <div class="front-part">
+                                       <div class="front-content-part">
+                                            <div class="front-icon-part">
+                                                <div class="icon-part">
+                                                    <img src="{% static 'assets/images/myimages/e2.png' %}" alt=""> 
+                                                </div>
+                                            </div>
+                                            <div class="front-title-part">
+                                                <h3 class="title"><a href="{% url 'ecommerce' %}">Ecommerce</a></h3>
+                                            </div>
+                                            <div class="front-desc-part">
+                                                <p>
+                                                    Ecommerce is the buying and selling of goods and services over the Internet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back-front">
+                                        <div class="back-front-content">
+                                            <div class="back-title-part">
+                                                <h3 class="back-title"><a href="{% url 'ecommerce' %}">Ecommerce</a></h3>
+                                            </div>
+                                            <div class="back-desc-part">
+                                                <p class="back-desc">Ecommerce is the buying and selling of goods and services over the Internet.</p>
+                                            </div>
+                                            <div class="back-btn-part">
+                                                <a class="readon view-more" href="{% url 'ecommerce' %}">Get In Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div> 
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="flip-box-inner">
+                                <div class="flip-box-wrap">
+                                    <div class="front-part">
+                                       <div class="front-content-part">
+                                            <div class="front-icon-part">
+                                                <div class="icon-part">
+                                                    <img src="{% static 'assets/images/services/main-home/icons/8.png' %}" alt=""> 
+                                                </div>
+                                            </div>
+                                            <div class="front-title-part">
+                                                <h3 class="title"><a href="{% url 'ui' %}">UI/UX</a></h3>
+                                            </div>
+                                            <div class="front-desc-part">
+                                                <p>
+                                                    UI at the most basic level, the user interface (UI) is the series of screens, pages, and visual elements.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back-front">
+                                        <div class="back-front-content">
+                                            <div class="back-title-part">
+                                                <h3 class="back-title"><a href="{% url 'ui' %}">UI/UX</a></h3>
+                                            </div>
+                                            <div class="back-desc-part">
+                                                <p class="back-desc">UI at the most basic level, the user interface (UI) is the series of screens, pages, and visual elements.</p>
+                                            </div>
+                                            <div class="back-btn-part">
+                                                <a class="readon view-more" href="{% url 'ui' %}">Get In Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div> 
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="flip-box-inner">
+                                <div class="flip-box-wrap">
+                                    <div class="front-part">
+                                       <div class="front-content-part">
+                                            <div class="front-icon-part">
+                                                <div class="icon-part">
+                                                    <img src="{% static 'assets/images/services/style1/4.png' %}" alt=""> 
+                                                </div>
+                                            </div>
+                                            <div class="front-title-part">
+                                                <h3 class="title"><a href="{% url 'ml' %}">Machine Learning</a></h3>
+                                            </div>
+                                            <div class="front-desc-part">
+                                                <p>
+                                                    Machine learning is capability of a machine to imitate intelligent human behavior.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back-front">
+                                        <div class="back-front-content">
+                                            <div class="back-title-part">
+                                                <h3 class="back-title"><a href="{% url 'ml' %}">Machine Learning</a></h3>
+                                            </div>
+                                            <div class="back-desc-part">
+                                                <p class="back-desc">Machine learning is capability of a machine to imitate intelligent human behavior.</p>
+                                            </div>
+                                            <div class="back-btn-part">
+                                                <a class="readon view-more" href="{% url 'ml' %}">Get In Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div> 
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="flip-box-inner">
+                                <div class="flip-box-wrap">
+                                    <div class="front-part">
+                                       <div class="front-content-part">
+                                            <div class="front-icon-part">
+                                                <div class="icon-part">
+                                                    <img src="{% static 'assets/images/services/main-home/icons/3.png' %}" alt=""> 
+                                                </div>
+                                            </div>
+                                            <div class="front-title-part">
+                                                <h3 class="title"><a href="{% url 'seo' %}">SEO</a></h3>
+                                            </div>
+                                            <div class="front-desc-part">
+                                                <p>
+                                                    SEO works by optimizing your site for the search engine that you want to rank for, whether it's Google, Amazon or YouTube.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back-front">
+                                        <div class="back-front-content">
+                                            <div class="back-title-part">
+                                                <h3 class="back-title"><a href="{% url 'seo' %}">SEO</a></h3>
+                                            </div>
+                                            <div class="back-desc-part">
+                                                <p class="back-desc">SEO works by optimizing your site for the search engine that you want to rank for, whether it's Google, Amazon or YouTube.</p>
+                                            </div>
+                                            <div class="back-btn-part">
+                                                <a class="readon view-more" href="{% url 'seo' %}">Get In Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div> 
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="flip-box-inner">
+                                <div class="flip-box-wrap">
+                                    <div class="front-part">
+                                       <div class="front-content-part">
+                                            <div class="front-icon-part">
+                                                <div class="icon-part">
+                                                    <img src="{% static 'assets/images/services/main-home/icons/5.png' %}" alt=""> 
+                                                </div>
+                                            </div>
+                                            <div class="front-title-part">
+                                                <h3 class="title"><a href="{% url 'support' %}">Support and Maintenance</a></h3>
+                                            </div>
+                                            <div class="front-desc-part">
+                                                <p>
+                                                    Support & Maintenance terms for the Product that Contractor is specified in maintenance Agreement.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back-front">
+                                        <div class="back-front-content">
+                                            <div class="back-title-part">
+                                                <h3 class="back-title"><a href="{% url 'support' %}">Support and Maintenance</a></h3>
+                                            </div>
+                                            <div class="back-desc-part">
+                                                <p class="back-desc">Support & Maintenance terms for the Product that Contractor is specified in maintenance Agreement.</p>
+                                            </div>
+                                            <div class="back-btn-part">
+                                                <a class="readon view-more" href="{% url 'support' %}">Get In Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Services Section End -->
+
+            <!-- Process Section Start -->
+            <!-- <div class="rs-process style5 bg7 pt-120 pb-120 md-pt-80 md-pb-80">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="process-wrap bg3">
+                                <div class="sec-title mb-30">
+                                    <div class="sub-text new">Working Process</div>
+                                    <h2 class="title white-color">
+                                        Our Working Process -  How We Work For Our Customers
+                                    </h2>
+                                </div>
+                                <div class="btn-part mt-40">
+                                    <a class="readon learn-more" href="contact.html">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 pl-30 md-pl-15 md-pt-50">
+                            <div class="row">
+                                <div class="col-md-6 mb-40">
+                                    <div class="rs-addon-number">
+                                        <div class="number-text">
+                                            <div class="number-area">
+                                                1.
+                                            </div>
+                                            <div class="number-title">
+                                                <h3 class="title"> Discovery</h3>
+                                            </div>
+                                            <p class="number-txt">  Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-40">
+                                    <div class="rs-addon-number">
+                                        <div class="number-text">
+                                            <div class="number-area">
+                                                2.
+                                            </div>
+                                            <div class="number-title">
+                                                <h3 class="title">Planning</h3>
+                                            </div>
+                                            <p class="number-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="rs-addon-number">
+                                        <div class="number-text">
+                                            <div class="number-area">
+                                                3.
+                                            </div>
+                                            <div class="number-title">
+                                                <h3 class="title">Execute</h3>
+                                            </div>
+                                            <p class="number-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="rs-addon-number">
+                                        <div class="number-text">
+                                            <div class="number-area">
+                                                4.
+                                            </div>
+                                            <div class="number-title">
+                                                <h3 class="title">Deliver</h3>
+                                            </div>
+                                            <p class="number-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Process Section End -->
+
+            <!-- Video Section End -->
+            <!-- <div class="rs-video-wrap style3 pt-120 pb-120 md-pt-80 md-pb-80">
+                <div class="container">
+                    <div class="row margin-0 grdiant-bg align-items-center">
+                        <div class="col-lg-6 padding-0">
+                            <div class="video-item">
+                                <div class="rs-videos">
+                                    <div class="animate-border main-home style2">
+                                        <a class="popup-border popup-videos" href="https://www.youtube.com/watch?v=YLN1Argi7ik">
+                                            <i class="fa fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-lg-6 padding-0">
+                            <div class="rs-requset">
+                                <div class="sec-title2 mb-33">
+                                    <span class="sub-text white-color">Let's Talk</span>
+                                    <h2 class="title testi-title white-color">
+                                       Request a Free Quote
+                                    </h2>
+                                </div>
+                                <div id="form-messages"></div>
+                                <form id="contact-form" method="post" action="https://rstheme.com/products/html/braintech/mailer.php">
+                                    <fieldset>
+                                        <div class="row">
+                                            <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
+                                                <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
+                                            </div> 
+                                            <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
+                                                <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
+                                            </div>   
+                                            <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
+                                                <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
+                                            </div>   
+                                            <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
+                                                <input class="from-control" type="text" id="website" name="website" placeholder="Your Website" required="">
+                                            </div>
+                                      
+                                            <div class="col-lg-12 mb-35">
+                                                <textarea class="from-control" id="message" name="message" placeholder="Your message Here" required=""></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="btn-part">
+                                            <input class="readon learn-more submit" type="submit" value="Submit Now">
+                                        </div> 
+                                    </fieldset>
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> -->
+            <!-- Video Section End -->
+            <!-- Cta section start -->
+            <div class="rs-cta style1 bg7 pt-80 pb-70" style="background: url(static/assets/images/bg/cta-bg.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                <div class="container">
+                    <div class="cta-wrap">
+                        <div class="row align-items-center">
+                            <div class="col-lg-9 col-md-12 md-mb-30">
+                                <span>Plan to Start a Project</span>
+                                <div class="title-wrap">
+                                    <h2 class="epx-title">Our Experts Ready to Help You</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 text-right md-text-left col-md-12">
+                                <div class="button-wrap">
+                                    <a class="readon learn-more" href="{% url 'contact' %}">Get In Touch</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cta section end -->
+
+        </div> 
+        <!-- Main content End -->
+     
+
+{% endblock base %}
+    

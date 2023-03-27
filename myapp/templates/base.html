@@ -1,0 +1,542 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from rstheme.com/products/html/braintech/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jan 2022 08:24:51 GMT -->
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>Snapgrid - IT Solutions and Technology</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.html">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/icon1.png' %}">
+    <!-- Bootstrap v4.4.1 css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <!-- flaticon css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/fonts/flaticon.css' %}">
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.css' %}">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/owl.carousel.css' %}">
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick.css' %}">
+    <!-- off canvas css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/off-canvas.css' %}">
+    <!-- magnific popup css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!-- Main Menu css -->
+    <link rel="stylesheet" href="{% static 'assets/css/rsmenu-main.css' %}">
+    <!-- spacing css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/rs-spacing.css' %}">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <!-- This stylesheet dynamically changed from style.less -->
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/responsive.css' %}">
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="defult-home">
+
+    <!--Preloader area start here-->
+    <div id="loader" class="loader">
+        <div class="loader-container"></div>
+    </div>
+    <!--Preloader area End here-->
+
+    <!-- Main content Start -->
+    <div class="main-content">
+
+        <!--Full width header Start-->
+        <div class="full-width-header">
+            <!--Header Start-->
+            <header id="rs-header" class="rs-header style2">
+                <!-- Topbar Area Start -->
+                <div class="topbar-area style2">
+                    <div class="container">
+                        <div class="row y-middle">
+                            <div class="col-lg-8">
+                                <ul class="topbar-contact">
+                                    <li>
+                                        <i class="flaticon-email"></i>
+                                        <a href="mailto:Snapgridtechnology@gmail.com">snapgridtechnology@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-call"></i>
+                                        <a href="tel:6354903488"> +91 6354903488</a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-location"></i>
+                                        Jayant Park, Memnagar, Ahmedabad, Gujarat
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 text-right">
+                                <div class="toolbar-sl-share">
+                                    <ul>
+                                        <li class="opening"> <em><i class="flaticon-clock"></i> 09:00am-06:00pm</em>
+                                        </li>
+                                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/login?lang=en"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/signup"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Topbar Area End -->
+                <!-- Menu Start -->
+                <div class="menu-area menu-sticky">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3">
+                                <div class="logo-part">
+                                    <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo.png' %}"
+                                            alt=""></a>
+                                </div>
+                                <div class="mobile-menu">
+                                    <a href="#" class="rs-menu-toggle rs-menu-toggle-close secondary">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 text-right">
+                                <div class="rs-menu-area">
+                                    <div class="main-menu">
+                                        <nav class="rs-menu pr-100 lg-pr-50 md-pr-0">
+                                            <ul class="nav-menu">
+                                                <li>
+                                                    <a href="{% url 'home' %}">Home</a>
+                                                </li>
+                                                    <!-- <ul class="mega-menu">
+                                                        <li class="mega-menu-container">
+                                                            <div class="mega-menu-innner">
+                                                                <div class="single-megamenu">
+                                                                    <ul class="sub-menu">
+                                                                        <li class="menu-title">Home Multipage</li>
+                                                                        <li><a href="index.html">Main Demo</a></li>
+                                                                        <li class="active"><a href="index2.html">Digital
+                                                                                Agency 01</a></li>
+                                                                        <li><a href="index3.html">IT Solution 01</a>
+                                                                        </li>
+                                                                        <li><a href="index4.html">Digital Agency 02</a>
+                                                                        </li>
+                                                                        <li><a href="index5.html">Software Solution</a>
+                                                                        </li>
+                                                                        <li><a href="index6.html">Data Analysis</a></li>
+                                                                        <li class="last-item"><a href="index7.html">IT
+                                                                                Solution 02</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="single-megamenu">
+                                                                    <ul class="sub-menu">
+                                                                        <li class="menu-title">Home Multipage</li>
+                                                                        <li><a href="index8.html">Gadgets Repairs</a>
+                                                                        </li>
+                                                                        <li><a href="index9.html">Application
+                                                                                Testing</a></li>
+                                                                        <li><a href="index10.html">IT Solution 03</a>
+                                                                        </li>
+                                                                        <li><a href="index11.html">Digital Agency
+                                                                                Dark</a></li>
+                                                                        <li><a href="index12.html">Web Design Agency</a>
+                                                                        </li>
+                                                                        <li><a href="index13.html">Branding Agency</a>
+                                                                        </li>
+                                                                        <li class="last-item"><a
+                                                                                href="index14.html">Technology
+                                                                                Agency</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="single-megamenu">
+                                                                    <ul class="sub-menu">
+                                                                        <li class="menu-title">Home Onepage</li>
+                                                                        <li><a href="onepage1.html">Main Demo</a></li>
+                                                                        <li><a href="onepage2.html">Digital Agency
+                                                                                01</a></li>
+                                                                        <li><a href="onepage3.html">IT Solution 01</a>
+                                                                        </li>
+                                                                        <li><a href="onepage4.html">Digital Agency
+                                                                                02</a></li>
+                                                                        <li><a href="onepage5.html">Software
+                                                                                Solution</a></li>
+                                                                        <li><a href="onepage6.html">Data Analysis</a>
+                                                                        </li>
+                                                                        <li class="last-item"><a href="onepage7.html">IT
+                                                                                Solution 02</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="single-megamenu">
+                                                                    <ul class="sub-menu">
+                                                                        <li class="menu-title">Home Onepage</li>
+                                                                        <li><a href="onepage8.html">Gadgets Repairs</a>
+                                                                        </li>
+                                                                        <li><a href="onepage9.html">Application
+                                                                                Testing</a></li>
+                                                                        <li><a href="onepage10.html">IT Solution 03</a>
+                                                                        </li>
+                                                                        <li><a href="onepage11.html">Digital Agency
+                                                                                Dark</a></li>
+                                                                        <li><a href="onepage12.html">Web Design
+                                                                                Agency</a></li>
+                                                                        <li><a href="onepage13.html">Branding Agency</a>
+                                                                        </li>
+                                                                        <li class="last-item"><a
+                                                                                href="onepage14.html">Technology
+                                                                                Agency</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul> //.mega-menu -->
+                                                <li>
+                                                    <a href="{% url 'about' %}">About</a>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a href="{% url 'services' %}">Services</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="{% url 'web_design' %}">Web Design</a> </li>
+                                                        <li><a href="{% url 'web_development' %}">Web Development</a> </li>
+                                                        <li><a href="{% url 'app_dev' %}">Android Development</a></li>
+                                                        <li><a href="{% url 'digital_marketing' %}">Digital Marketing</a></li>
+                                                        <li><a href="{% url 'ecommerce' %}">Ecommerce</a></li>
+                                                        <li><a href="{% url 'ui' %}">UI/UX</a> </li>
+                                                        <li><a href="{% url 'ml' %}">Machine Learning</a></li>
+                                                        <li><a href="{% url 'hosting' %}">Hosting</a></li>
+                                                        <li><a href="{% url 'seo' %}">SEO</a></li>
+                                                        <li><a href="{% url 'support' %}">Support and Maintenance</a></li>
+
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a href="#">What We Do</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item-has-children">
+                                                            <a href="#">Intership</a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="{% url 'php_intern' %}">PHP</a></li>
+                                                                <li><a href="{% url 'Java_intern' %}">Java</a></li>
+                                                                <li><a href="{% url 'Android_intern' %}">Android</a></li>
+                                                                <li><a href="{% url 'Python_intern' %}">Python</a></li>
+                                                                <li><a href="{% url 'Django_intern' %}">Python-Django</a></li>
+                                                                <li><a href="{% url 'Ml_intern' %}">Machine Learning</a></li>
+                                                                <li><a href="{% url 'Ds_intern' %}">Data science</a></li>
+                                                                <li><a href="{% url 'Ai_intern' %}">Artifical intelligence</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <!-- <li class="menu-item-has-children">
+                                                            <a href="#">Collage Project</a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="{% url 'php_project' %}">PHP</a></li>
+                                                                <li><a href="{% url 'android_project' %}">Android</a></li>
+                                                                <li><a href="{% url 'asp_net_project' %}">Asp.Net</a></li>
+                                                                <li><a href="{% url 'java_project' %}">Java</a></li>
+                                                                <li><a href="{% url 'python_project' %}">Python</a></li>
+                                                                <li><a href="{% url 'django_project' %}">Python-Django</a></li>
+                                                                <li><a href="{% url 'ml_project' %}">Machine Learning</a></li>
+                                                                <li><a href="{% url 'ai_project' %}">Artifical intelligence</a></li>
+                                                            </ul>
+                                                        </li> -->
+                                                        <!-- <li class="menu-item-has-children">
+                                                            <a href="our-team.html">Our Team</a>
+                                                        </li>
+                                                        <li class="menu-item-has-children">
+                                                            <a href="single-team.html">Single Team</a>
+                                                        </li>
+                                                        <li class="menu-item-has-children">
+                                                            <a href="#">Case Studies</a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="case-studies-style1.html">Case Studies
+                                                                        Style 1</a></li>
+                                                                <li><a href="case-studies-style2.html">Case Studies
+                                                                        Style 2</a></li>
+                                                                <li><a href="case-studies-style3.html">Case Studies
+                                                                        Style 3</a></li>
+                                                                <li><a href="case-studies-style4.html">Case Studies
+                                                                        Style 4</a></li>
+                                                                <li><a href="case-studies-style5.html">Case Studies
+                                                                        Style 5</a></li>
+                                                                <li><a href="case-studies-style6.html">Case Studies
+                                                                        Style 6</a></li>
+                                                                <li><a href="case-studies-style7.html">Case Studies
+                                                                        Style 7</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item-has-children">
+                                                            <a href="shop.html">Shop</a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="shop.html">Shop</a></li>
+                                                                <li><a href="shop-single.html">Shop Single</a></li>
+                                                                <li><a href="cart.html">Cart</a></li>
+                                                                <li><a href="checkout.html">Checkout</a></li>
+                                                                <li><a href="my-account.html">My Account</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item-has-children">
+                                                            <a href="pricing.html">Pricing</a>
+                                                        </li>
+                                                        <li class="menu-item-has-children">
+                                                            <a href="faq.html">Faq</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="error.html">404</a>
+                                                        </li> -->
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="{% url 'contact' %}">Contact</a>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a href="#">My Account</a>
+                                                    <ul class="sub-menu">
+                                                        {% if request.user.is_authenticated %}
+                                                        <li><a href="">{{request.user}}</a></li>
+                                                        <li><a href="{% url 'update_profile' %}">Update Profile</a> </li>
+                                                        <li><a href="{% url 'change_password' %}">Change Password</a> </li>
+                                                        <li><a href="{% url 'Logout' %}">Logout</a> </li>
+                                                        {% else %}
+                                                        <li><a href="{% url 'signup_form' %}">Register</a></li>
+                                                        <li><a href="{% url 'login_form' %}">Login</a></li>
+                                                        {% endif %}
+                                                    </ul>
+                                                </li>
+                                            </ul> <!-- //.nav-menu -->
+                                        </nav>
+                                    </div> <!-- //.main-menu -->
+                                    <!-- <div class="expand-btn-inner search-icon hidden-md">
+                                        <ul>
+                                            <li class="sidebarmenu-search">
+                                                <a class="hidden-xs rs-search pr-0" data-target=".search-modal"
+                                                    data-toggle="modal" href="#">
+                                                    <i class="flaticon-search"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu End -->
+            </header>
+            <!--Header End-->
+            {% block base %}
+
+
+            {% endblock base %}
+
+            <!-- Footer Start -->
+            <footer id="rs-footer" class="rs-footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
+                                <div class="footer-logo mb-30">
+                                    <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo.png' %}" alt=""></a>
+                                </div>
+                                <div class="textwidget pb-30">
+                                    <p>Jayant Park, Memnagar, Gurukul Road, Ahmedabad, Gujarat 380052</p>
+                                </div>
+                                <ul class="footer-social md-mb-30">
+                                    <li>
+                                        <a href="https://www.facebook.com/" target="_blank"><span><i class="fa fa-facebook"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/login?lang=en " target="_blank"><span><i class="fa fa-twitter"></i></span></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://www.linkedin.com/signup" target="_blank"><span><i class="fa fa-linkedin"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/?hl=en" target="_blank"><span><i class="fa fa-instagram"></i></span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
+                                <h3 class="widget-title">IT Services</h3>
+                                <ul class="site-map">
+                                    <li><a href="{% url 'web_design' %}">Web Desining</a></li>
+                                    <li><a href="{% url 'web_development' %}">Web Development</a></li>
+                                    <li><a href="{% url 'ml' %}">Machine Learning</a></li>
+                                    <li><a href="{% url 'app_dev' %}">App Development</a></li>
+                                    <li><a href="{% url 'digital_marketing' %}">Digital Marketing</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-12 col-sm-12 md-mb-30">
+                                <h3 class="widget-title">Contact Info</h3>
+                                <ul class="address-widget">
+                                    <li>
+                                        <i class="flaticon-location"></i>
+                                        <div class="desc">Jayant Park, Memnagar, Gurukul Road, Ahmedabad, Gujarat 380052</div>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-call"></i>
+                                        <div class="desc">
+                                            <a href="tel:6354903488">(+91) 6354903488</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-email"></i>
+                                        <div class="desc">
+                                            <a href="mailto:snapgridtechnology@gmail.com">snapgridtechnology@gmail.com</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-clock-1"></i>
+                                        <div class="desc">
+                                            Opening Hours: 9:00 A.M - 6:00 P.M
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-12 col-sm-12">
+                                <h3 class="widget-title">Newsletter</h3>
+                                <p class="widget-desc">We denounce with righteous and in and dislike men who are so
+                                    beguiled and demo realized.</p>
+                                <!-- <p>
+                                    <input type="email" name="EMAIL" placeholder="Your email address" required="">
+                                    <em class="paper-plane"><input type="submit" value="Sign up"></em>
+                                    <i class="flaticon-send"></i>
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row y-middle">
+                            <div class="col-lg-6 text-right md-mb-10 order-last">
+                                <ul class="copy-right-menu">
+                                    <li><a href="home">Home</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <li><a href="contact">Contact</a></li>
+                                    <li><a href="signup_form/">Register</a></li>
+                                    <li><a href="login_form/">Login</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="copyright">
+                                    <p>&copy; 2021 All Rights Reserved. Developed By <a
+                                            href="#">Snapgrid Technology    </a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer End -->
+
+            <!-- start scrollUp  -->
+            <div id="scrollUp" class="orange-color">
+                <i class="fa fa-angle-up"></i>
+            </div>
+            <!-- End scrollUp  -->
+
+            <!-- Search Modal Start -->
+            <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="flaticon-cross"></span>
+                </button>
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="search-block clearfix">
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Search Here..." type="text">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Search Modal End -->
+
+            <!-- modernizr js -->
+            <script src="{% static 'assets/js/modernizr-2.8.3.min.js' %}"></script>
+            <!-- jquery latest version -->
+            <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+            <!-- Bootstrap v4.4.1 js -->
+            <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+            <!-- Menu js -->
+            <script src="{% static 'assets/js/rsmenu-main.js' %}"></script>
+            <!-- op nav js -->
+            <script src="{% static 'assets/js/jquery.nav.js' %}"></script>
+            <!-- owl.carousel js -->
+            <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+            <!-- wow js -->
+            <script src="{% static 'assets/js/wow.min.js' %}"></script>
+            <!-- Skill bar js -->
+            <script src="{% static 'assets/js/skill.bars.jquery.js' %}"></script>
+            <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+            <!-- counter top js -->
+            <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+            <!-- swiper js -->
+            <script src="{% static 'assets/js/swiper.min.js' %}"></script>
+            <!-- particles js -->
+            <script src="{% static 'assets/js/particles.min.js' %}"></script>
+            <!-- magnific popup js -->
+            <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+            <!-- plugins js -->
+            <script src="{% static 'assets/js/plugins.js' %}"></script>
+            <!-- pointer js -->
+            <script src="{% static 'assets/js/pointer.js' %}"></script>
+            <!-- contact form js -->
+            <script src="{% static 'assets/js/contact.form.js' %}"></script>
+            <!-- main js -->
+            <script src="{% static 'assets/js/main.js' %}"></script>
+            
+            <script>
+                var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?69361';
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = url;
+                var options = {
+              "enabled":true,
+              "chatButtonSetting":{
+                  "backgroundColor":"#4dc247",
+                  "ctaText":"",
+                  "borderRadius":"25",
+                  "marginLeft":"50",   
+                  "marginBottom":"50",
+                  "marginRight":"50",
+                  "position":"left"
+              },      
+              "brandSetting":{
+                  "brandName":"Snapgridtechnology",
+                  "brandSubTitle":"It Solution",
+                  "brandImg":"{% static 'assets/images/icon1.png' %}",
+                  "welcomeText":"Hi there!\nHow can I help you?",
+                  "messageText":"Hello, I have a question about your company {{page_link}}",
+                  "backgroundColor":"#0a5f54",
+                  "ctaText":"Start Chat",
+                  "borderRadius":"25",
+                  "autoShow":false,
+                  "phoneNumber":"916354903488"
+              }
+            };
+                s.onload = function() { 
+                    CreateWhatsappChatWidget(options);
+                };
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            </script>
+</body>
+
+</html>

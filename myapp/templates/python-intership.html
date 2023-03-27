@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block base %}
+{% for message in messages %}
+        <div class="container-fluid p-0">
+            <div class="alert {{ message.tags }} alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                {{ message }}
+            </div>
+        </div>
+        {% endfor %}
+<!-- Video Section End -->
+<div class="rs-video-wrap style3 pt-120 pb-120 md-pt-80 md-pb-80">
+    <div class="container">
+        <div class="row margin-0 grdiant-bg align-items-center">
+            <div class="col-lg-6">
+                <ul>
+                    <li><pre style="color: #cfcbca; font-size: 16px; font-weight: 500; padding: 0px 20px;"><span style="color: #fff9f7; font-size: 16px; font-weight: 800;">Degrees:</span>   BE/ ME/ BCA/ MCA/ B.Tech/ M.Tech/ B.Sc(IT)
+           M.Sc(IT)/ Diploma</pre></li>
+                    <li><pre style="color: #cfcbca; font-size: 16px; font-weight: 500; padding: 0px 20px;"><span style="color: #fff9f7; font-size: 16px; font-weight: 800;">Duration:</span>  3 To 6 Months</pre></li>
+                    <li><pre style="color: #cfcbca; font-size: 16px; font-weight: 500; padding: 0px 20px;"><span style="color: #fff9f7; font-size: 16px; font-weight: 800;">Contents:</span>  Python basic overview, Function, Class-object 
+           data format, file handling, oops concept</pre></li>
+                    <li><pre style="color: #cfcbca; font-size: 16px; font-weight: 500; padding: 0px 20px;"><span style="color: #fff9f7; font-size: 16px; font-weight: 800;">Procedure:</span>  Registration.
+            Get appointment and defination letter.
+            Live Project(Daily 2 hours).
+            Progress report.
+            Get server knowledge.
+            Project completion letter.
+            Industrial experience certificate.
+            Interview Prepration.
+            Placement.</pre></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 padding-0">
+                <div class="rs-requset">
+                    <div class="sec-title2 mb-33">
+                        <span class="sub-text white-color">Python Intership</span>
+                        <h2 class="title testi-title white-color">
+                           Get a best oppertunity
+                        </h2>
+                    </div>
+                    <div id="form-messages"></div>
+                    <form method="post">
+                        {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
+                                    <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
+                                </div> 
+                                <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
+                                    <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
+                                </div>   
+                                <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
+                                    <input class="from-control" type="text" id="phone" name="phone" placeholder="Contact Number" required="">
+                                </div>   
+                                <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
+                                    <input class="from-control" type="text" id="website" name="city" placeholder="Your city" required="">
+                                </div>
+                          
+                                <div class="col-lg-12 mb-35">
+                                    <textarea class="from-control" id="message" name="address" placeholder="Your Address Here" required=""></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-part">
+                                <input class="readon learn-more submit" type="submit" value="Apply Now">
+                            </div> 
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<!-- Video Section End -->
+    
+{% endblock base %}
+    
